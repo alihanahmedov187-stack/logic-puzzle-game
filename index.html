@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кубок Логики - Головоломка</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🧩 Кубок Логики</h1>
+            <div class="game-info">
+                <div>Уровень: <span id="level">1</span></div>
+                <div>Очки: <span id="score">0</span></div>
+                <div>Время: <span id="timer">0</span>сек</div>
+            </div>
+        </header>
+
+        <div class="game-area">
+            <div class="grid-container">
+                <div class="grid" id="gameGrid"></div>
+            </div>
+            <div class="controls">
+                <div class="next-shape">
+                    <h3>Следующая фигура:</h3>
+                    <div class="shape-preview" id="nextShape"></div>
+                </div>
+                <button id="rotateBtn">↻ Повернуть</button>
+                <button id="resetBtn">🔄 Новый уровень</button>
+                <button id="hintBtn">💡 Подсказка</button>
+            </div>
+        </div>
+
+        <div class="instructions">
+            <h3>Как играть:</h3>
+            <p>Перетаскивайте фигуры на поле. Заполняйте линии для получения очков!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
