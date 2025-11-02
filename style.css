@@ -188,3 +188,196 @@ button:active {
         gap: 10px;
     }
 }
+/* Стили для перетаскиваемых фигур */
+.shapes-container {
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    border: 2px dashed #dee2e6;
+    margin-bottom: 20px;
+}
+
+.shapes-container h3 {
+    margin-bottom: 10px;
+    color: #495057;
+    text-align: center;
+}
+
+.draggable-shape {
+    padding: 10px;
+    background: #e9ecef;
+    border-radius: 8px;
+    cursor: grab;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.draggable-shape:hover {
+    transform: scale(1.05);
+    border-color: #4dabf7;
+}
+
+.draggable-shape:active {
+    cursor: grabbing;
+    transform: scale(0.95);
+}
+
+.shape-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3px;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+.shape-cell {
+    border-radius: 3px;
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+.shape-cell.empty {
+    background: transparent;
+    border: 1px dashed #ccc;
+}
+
+.shape-preview-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3px;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+.shape-preview-cell {
+    border-radius: 3px;
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+/* Улучшенные стили для ячеек при перетаскивании */
+.cell {
+    transition: all 0.2s ease;
+}
+
+.cell.drag-over {
+    background: #ffeaa7 !important;
+    border-color: #fdcb6e !important;
+}
+
+.cell.filled {
+    animation: popIn 0.3s ease;
+}
+
+@keyframes popIn {
+    0% { transform: scale(0.8); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    .shapes-container {
+        padding: 10px;
+    }
+    
+    .shape-grid, .shape-preview-grid {
+        width: 50px;
+        height: 50px;
+    }
+    /* Стили для перетаскиваемых фигур */
+.shapes-container {
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    border: 2px dashed #dee2e6;
+    margin-bottom: 20px;
+}
+
+.shapes-container h3 {
+    margin-bottom: 10px;
+    color: #495057;
+    text-align: center;
+}
+
+.draggable-shape {
+    padding: 10px;
+    background: #e9ecef;
+    border-radius: 8px;
+    cursor: grab;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.draggable-shape:hover {
+    transform: scale(1.05);
+    border-color: #4dabf7;
+}
+
+.draggable-shape:active {
+    cursor: grabbing;
+    transform: scale(0.95);
+}
+
+.shape-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3px;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+.shape-cell {
+    border-radius: 3px;
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+.shape-cell.empty {
+    background: transparent;
+    border: 1px dashed #ccc;
+}
+
+.shape-preview-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3px;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+.shape-preview-cell {
+    border-radius: 3px;
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+/* Улучшенные стили для ячеек при перетаскивании */
+.cell {
+    transition: all 0.2s ease;
+}
+
+.cell.drag-over {
+    background: #ffeaa7 !important;
+    border-color: #fdcb6e !important;
+}
+
+.cell.filled {
+    animation: popIn 0.3s ease;
+}
+
+@keyframes popIn {
+    0% { transform: scale(0.8); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    .shapes-container {
+        padding: 10px;
+    }
+    
+    .shape-grid, .shape-preview-grid {
+        width: 50px;
+        height: 50px;
+    }
+}
